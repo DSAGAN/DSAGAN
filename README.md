@@ -33,6 +33,9 @@ latest_net_G.pth
 # Run test.py
 python test.py --dataroot path/to/liveimage --name dsagan_pix2pix --model pix2pix 
 
+# Research paper
+This algorithm was published on XXX.
+<br/><br/><br/>
 
 # CycleGAN and pix2pix in PyTorch
 
