@@ -6,14 +6,14 @@ This is the model for create DSA-like image from live image in cerebral angiogra
 
 cd path/to/repository
 
-# Downliad files from releases
+## Downliad files from releases
 https://github.com/DSAGAN/DSAGAN/releases
 
 wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_D.pth
 
 wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_G.pth
 
-# Deploy the donwloaded file to checkpoints/dsagan_pix2pix
+## Deploy the donwloaded file to checkpoints/dsagan_pix2pix
 mkdir -p checkpoints/dsagan_pix2pix/
 
 mv best-performing_net_D.pth checkpoints/dsagan_pix2pix/latest_net_D.pth
@@ -30,7 +30,7 @@ latest_net_D.pth
 
 latest_net_G.pth
 
-# Run test.py
+## Run test.py
 python test.py --dataroot path/to/liveimage --name dsagan_pix2pix --model pix2pix 
 
 # Research paper
