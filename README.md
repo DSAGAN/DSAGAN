@@ -21,7 +21,9 @@ mv best-performing_net_D.pth checkpoints/dsagan_pix2pix/latest_net_D.pth
 mv best-performing_net_G.pth checkpoints/dsagan_pix2pix/latest_net_G.pth
 
 
-※When you are readly, you can see as follows:
+
+※When it is readly, you can see as follows:
+
 ls checkpoints/dsagan_pix2pix/
 
 latest_net_D.pth
