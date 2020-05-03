@@ -15,7 +15,9 @@ wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net
 
 # Plaec the donwloaded file to checkpoints/dsagan_pix2pix
 mkdir -p checkpoints/dsagan_pix2pix/
+
 mv best-performing_net_D.pth checkpoints/dsagan_pix2pix/latest_net_D.pth
+
 mv best-performing_net_G.pth checkpoints/dsagan_pix2pix/latest_net_G.pth
 
 ls checkpoints/dsagan_pix2pix/
