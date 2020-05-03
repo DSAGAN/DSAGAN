@@ -1,6 +1,27 @@
-<img src='imgs/horse2zebra.gif' align="right" width=384>
+# Deep learning for subtraction angiography
 
-<br><br><br>
+This is the model for create DSA-like image from live image in cerebral angiography.
+
+# Usage
+
+cd path/to/repository
+# Downliad files from releases(https://github.com/DSAGAN/DSAGAN/releases).
+
+wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_D.pth
+wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_G.pth
+
+# Plaec the donwloaded file to checkpoints/dsagan_pix2pix
+mkdir -p checkpoints/dsagan_pix2pix/
+mv best-performing_net_D.pth checkpoints/dsagan_pix2pix/latest_net_D.pth
+mv best-performing_net_G.pth checkpoints/dsagan_pix2pix/latest_net_G.pth
+
+ls checkpoints/dsagan_pix2pix/
+latest_net_D.pth
+latest_net_G.pth
+
+# Run test.py
+python test.py --dataroot path/to/liveimage --name dsagan_pix2pix --model pix2pix 
+
 
 # CycleGAN and pix2pix in PyTorch
 
