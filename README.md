@@ -43,8 +43,6 @@ You may find useful information in [training/test tips](docs/tips.md) and [frequ
 
 **Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://arxiv.org/pdf/1611.07004.pdf) |  [Torch](https://github.com/phillipi/pix2pix)**
 
-<img src="https://phillipi.github.io/pix2pix/images/teaser_v3.png" width="800px"/>
-
 ## Other implementations
 
 ### pix2pix
