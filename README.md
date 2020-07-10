@@ -3,33 +3,36 @@
 This is the model for create DSA-like image from live image in cerebral angiography.
 
 # Usage
-
+```bash
 cd path/to/repository
+```
 
 ## Downliad files from releases
 https://github.com/DSAGAN/DSAGAN/releases
 
+```bash
 wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_D.pth
 
 wget https://github.com/DSAGAN/DSAGAN/releases/download/v1.0/best-performing_net_G.pth
+```
 
 ## Deploy the donwloaded file to checkpoints/dsagan_pix2pix
+```bash
 mkdir -p checkpoints/dsagan_pix2pix/
 
 mv best-performing_net_D.pth checkpoints/dsagan_pix2pix/latest_net_D.pth
-
 mv best-performing_net_G.pth checkpoints/dsagan_pix2pix/latest_net_G.pth
-
+```
 <br/>
 
 ## Run test.py
+```bash
 python test.py --dataroot path/to/liveimage --name dsagan_pix2pix --model pix2pix 
+```
 
 # Research paper
 This algorithm was published on XXX.
 <br/><br/><br/>
-
-**Environment**: The current software works well with PyTorch 0.41+. Check out the older [branch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/pytorch0.3.1) that supports PyTorch 0.1-0.3.
 
 **Note**: The code included not only pix2pix but also  dcgan. In this research, we only use pix2pix.
 
@@ -37,24 +40,11 @@ You may find useful information in [training/test tips](docs/tips.md) and [frequ
 
 **Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://arxiv.org/pdf/1611.07004.pdf) |  [Torch](https://github.com/phillipi/pix2pix)**
 
-## Other implementations
-
-### pix2pix
-<p><a href="https://github.com/affinelayer/pix2pix-tensorflow"> [Tensorflow]</a> (by Christopher Hesse),
-<a href="https://github.com/Eyyub/tensorflow-pix2pix">[Tensorflow]</a> (by Eyyüb Sariu),
-<a href="https://github.com/datitran/face2face-demo"> [Tensorflow (face2face)]</a> (by Dat Tran),
-<a href="https://github.com/awjuliani/Pix2Pix-Film"> [Tensorflow (film)]</a> (by Arthur Juliani),
-<a href="https://github.com/kaonashi-tyc/zi2zi">[Tensorflow (zi2zi)]</a> (by Yuchen Tian),
-<a href="https://github.com/pfnet-research/chainer-pix2pix">[Chainer]</a> (by mattya),
-<a href="https://github.com/tjwei/GANotebooks">[tf/torch/keras/lasagne]</a> (by tjwei),
-<a href="https://github.com/taey16/pix2pixBEGAN.pytorch">[Pytorch]</a> (by taey16)
-</p>
-</ul>
-
 ## Prerequisites
 - Linux or macOS
 - Python 3
 - CPU or NVIDIA GPU + CUDA CuDNN
+**Environment**: The current software works well with PyTorch 0.41+.
 
 ## Getting Started
 ### Installation
